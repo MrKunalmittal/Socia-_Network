@@ -1,0 +1,246 @@
+@import './reset.css';
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-white: #fff;
+    --app-branding: #ff3c57;
+}
+
+body {
+    background-color: var(--app-dark-bg);
+}
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+/* --------------- */
+/* Header         */
+/* --------------- */
+
+
+header {
+    height: 60px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 20%;
+    height: 56%;
+}
+
+.title h1 {
+    font-family: cursive;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 56px;
+    /* font-family: "Roboto", sans-serif; */
+    color: var(--app-blue);
+    letter-spacing: 0.2px;
+}
+.tag{
+    font-size: 25px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+nav {
+    width: 70%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #dcdcdc;
+    font-weight: 525;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    line-height: 60px;
+    font-family: Madefor, Helvetica Neue, Helvetica, Arial, Hiragino Kaku Gothic Pro W3, Hiragino Kaku Gothic Pro, sans-serif !important;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li+li {
+    margin-left: 18px;
+}
+.avatar{
+    width: 20%;
+    margin-top: 10px;
+    text-align: right;
+}
+.avatar >img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-items: flex-end;
+    margin-left: 90px;
+}
+/* ----------------------------------- */
+/* ---------content------------------- */
+.main-content{
+    width: min(100% - 60%, 1280px);
+    margin-inline: auto;
+    /* background-color: #364ee6; */
+    /* height: 100vh; */
+}
+.content {
+    /* background-color: #364ee6;
+    
+    background-color: #191919;
+    border-radius: 4px */
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+.upper{
+    display: flex;
+    width: 100%;
+}
+.area{
+    width: 80%;
+    background-color: #191919;
+
+    border-radius: 4px
+}
+textarea{
+
+    border:2px solid #191919;
+    border-radius: 4px;
+    display: block;
+    width:440px;
+    height: 200px;
+    padding : 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #191919;
+    color: #d6d6d6;
+
+}
+/* .input{
+    display: none;
+}
+label{
+    cursor: pointer;
+    color: #fff;
+} */
+input{
+    margin-left: 20px;
+    color: #fff;
+}
+
+button {
+ width: 120px;
+ height: 40px;
+  text-align: center;
+ background-color:var(--app-blue);
+ border: 2px solid var(--app-blue);
+ border-radius: 4px;
+ color:#fff;
+ font-size: 18px;
+ color:#fff;
+ font-size: 18px;
+ margin-left: 90px;
+ margin-bottom: 20px;
+}
+.box{
+   width: 80%;
+   margin: 10px 0;
+   background-color: #fff;
+   margin-bottom: 15px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 15px;
+   font-weight: 650;
+   padding-right: 15px;
+   display: flex;
+   line-height: 40px;
+    /* min-height: 50px;
+    width: 80%;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 650;
+    padding-right: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    margin-right: 15px;
+    place-items: center; */
+  
+}
+.post-header{
+    display: flex;
+    padding: 10px;
+    height:50px ;
+    line-height: 40px;
+    /* place-items: center;
+    width: 100%;
+    height:50px ; */
+    
+}
+.user{
+    margin-left: 5px;
+}
+.profile>.img{
+    width: 20%;
+}
+.post-header h3{
+    font-weight: 400;
+}
+.date{
+    display: inline;
+    margin-left: auto;
+    line-height: 40px;
+}
+.profile{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.data{
+    color: #000;
+    
+}
+.profile-info{
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #d6d6d6;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+}
+
+
